@@ -37,7 +37,7 @@ Register this Service in **AndroidManifest.xml** and set **exported** = true.
     </intent-filter>
 </service>
 ```
-Define your API class extends **com.github.xy02.arxlibrary.API**   
+Define your API class extends **com.github.xy02.arxlib.API**   
 ***Note: The class require a default empty constructor*** 
 
 java example:
