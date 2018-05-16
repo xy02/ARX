@@ -29,8 +29,8 @@ public class ARxBinder extends IARxService.Stub {
                 .doOnNext(it -> e.onNext(id, JSON.toJSONString(it)))
                 .doOnComplete(() -> e.onComplete(id))
                 .doOnError(it -> e.onError(id, it.toString() + " @" + context.getPackageName()))
-                .doOnError(Throwable::printStackTrace)
-                .subscribe();
+//                .doOnError(Throwable::printStackTrace)
+                .subscribe(x->{},Throwable::printStackTrace);
     }
 
     private String getJSONData(String data) {
